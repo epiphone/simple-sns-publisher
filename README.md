@@ -1,5 +1,7 @@
 # simple-sns-publisher
 
+[![Build Status](https://travis-ci.org/epiphone/simple-sns-publisher.svg?branch=master)](https://travis-ci.org/epiphone/simple-sns-publisher) [![codecov](https://codecov.io/gh/epiphone/simple-sns-publisher/branch/master/graph/badge.svg)](https://codecov.io/gh/epiphone/simple-sns-publisher)
+
 A simple wrapper over [aws-sdk]() to publish JSON-formatted messages on a SNS topic.
 
 ## Install
@@ -52,9 +54,7 @@ export interface ISimpleSNSPublisherOptions {
    * console.log/console.error. E.g. a Winston instance can be passed here.
    */
   logHandler: {
-    info: (
-      args: { options: IPublishOptions; result: AWS.SNS.Types.PublishResponse }
-    ) => any
+    info: (args: { options: IPublishOptions; result: AWS.SNS.Types.PublishResponse }) => any
     error: (args: { options: IPublishOptions; error: AWS.AWSError }) => any
   }
 
