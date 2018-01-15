@@ -1,0 +1,49 @@
+{
+  "name": "simple-sns-publisher",
+  "version": "1.0.0",
+  "description": "A simple wrapper over aws-sdk to publish JSON-formatted messages on a SNS topic.",
+  "keywords": [
+    "aws-sns",
+    "aws-sdk",
+    "messaging",
+    "event-publisher"
+  ],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "repository": "git@github.com:epiphone/simple-sns-publisher",
+  "author": "Aleksi Pekkala <aleksipekkala@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf coverage build",
+    "build": "yarn clean && tsc -p tsconfig.release.json",
+    "format": "prettier --write {src,test}/**/*.ts",
+    "lint": "tslint --project . --type-check src/**/*.ts",
+    "prepare": "yarn build",
+    "send-coverage": "codecov -f coverage/*.json",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@types/jest": "^22.0.1",
+    "@types/prettier": "^1.9.0",
+    "@types/rimraf": "^2.0.2",
+    "aws-sdk-mock": "^1.7.0",
+    "codecov": "^3.0.0",
+    "jest": "^22.1.1",
+    "prettier": "^1.10.2",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^22.0.1",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.6.0",
+    "tslint-config-standard": "^7.0.0",
+    "tsutils": "^2.17.1",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.181.0"
+  }
+}
