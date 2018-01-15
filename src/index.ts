@@ -52,7 +52,7 @@ export interface IPublishOptions {
   topicARN: string
 
   /**
-   * Any additional publish options. Values defined here overriding defaults.
+   * Any additional publish options. Values defined here override defaults.
    */
   extraOptions?: AWS.SNS.Types.PublishInput
 }

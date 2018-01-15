@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/epiphone/simple-sns-publisher.svg?branch=master)](https://travis-ci.org/epiphone/simple-sns-publisher) [![codecov](https://codecov.io/gh/epiphone/simple-sns-publisher/branch/master/graph/badge.svg)](https://codecov.io/gh/epiphone/simple-sns-publisher)
 
-A simple wrapper over [aws-sdk]() to publish JSON-formatted messages on a SNS topic.
+A simple wrapper over [AWS NodeJS SDK](https://aws.amazon.com/sdk-for-node-js/) for publishing JSON-formatted messages on a SNS topic.
 
 ## Install
 
