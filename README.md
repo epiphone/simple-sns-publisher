@@ -4,11 +4,11 @@
 
 A simple wrapper over [AWS NodeJS SDK](https://aws.amazon.com/sdk-for-node-js/) for publishing JSON-formatted messages on a SNS topic.
 
-## Install
+## ~~Install~~
 
-```bash
-yarn install simple-sns-publisher
-```
+~~`yarn install simple-sns-publisher`~~
+
+**Still under development!**
 
 ## Usage
 
@@ -73,3 +73,7 @@ export interface ISimpleSNSPublisherOptions {
 ## Related projects
 
 - The handy [aws-sdk-mock](https://github.com/dwyl/aws-sdk-mock) mocking library used for tests
+
+## TODO
+
+- Set SNS message attributes to allow filtering
